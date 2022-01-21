@@ -1,0 +1,44 @@
+Collection--->interface
+Collections--->class
+for Dynamic expanding and shrinking we use collections instead of arrays
+in Collections we expand and shrink the memory as required
+ex:Collection values=new ArrayList();
+//in above Collection is an interface cannot have a object
+//ArrayList is an class which implements Collection
+ArrayList implements List(interface) and List extends another interface Collection
+so ArrayList indirectly implements Collection
+**we can add elements using add method into created Collection 
+ex:values.add(1);
+values.add(7);
+values.add(9);
+when we know required memory or required variable are fixed go for array 
+when we don't know the required memory we need to go for collection
+*The datatype in Collection is object type
+we can add any datatype element we want
+ex:values.add("raj");
+//if we want to deal with specific datatype then we need to use Generics
+ex:Collection<Integers>values=new ArrayList<Integers>();
+now we can store only integer type values in created Collection values
+angular braces used for generics
+in 1.2 we got Collection api
+in 1.5 we got generics
+in 1.7 Collection<Integers>values =new ArrayList<>();//update
+//*The problem with Collection is it doesnot use index numbers
+//But List works with index numbers
+ex:List<Intergers>nums=new ArrayList<>();
+//we also have Set(inteface) implemented by HashSet
+//in List we can have duplicate values
+//in Set we cannot have duplicate values
+ex:Set<Integers>nums=new HashSet<>();
+//there is no order in retrieving elements from Set
+//we can also use TreeSet instead of HashSet
+//in TreeSet when retrieve the Elements everything we get will be in a sorted format
+ex:5 6 8 2 
+we get 2 5 6 8
+//we can also have Map(interface) implemented by class HashMap,HashTable
+//Map<key,value>
+//unlike index in ArrayList
+//Map has key value pairs
+//every value accessed by a key
+ex:Map<Intergers,String>m=new HashMap<>();
+
